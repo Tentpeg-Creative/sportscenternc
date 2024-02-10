@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    padding: 25px;
+
+}
+.home__classes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.home__classes h2{
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 20px;;
+}
+.title__classes___home{
+    display: block;
+}
+.title__classes___home hr{
+        border-top: 5px dotted red;
+        margin: 20px 20px; /* Ajuste a margem conforme necessário */
+        width: 200px;
+        margin: auto;
+}
