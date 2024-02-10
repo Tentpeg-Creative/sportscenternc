@@ -1,25 +1,64 @@
-/* Media Query para Telas Pequenas (Mobile) */
-@media screen and (max-width: 768px) {
-    .material-symbols-outlined {
-        display: none; /* Ocultar o ícone do menu em telas pequenas */
-    }
-
-    .toggle-menu {
-        display: block; /* Exibir o ícone de hamburguer em telas pequenas */
-    }
-
-    nav {
-        display: none; /* Ocultar o menu por padrão em telas pequenas */
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        top: 60px;
-        left: 0;
+@media screen and (max-width: 1200px) {
+    .header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
         background-color: #f1f1f1; /* Adicione uma cor de fundo para visualização */
-        width: 100%;
     }
+    .logo img{
+        display: block;
+        width: 150px;
+        padding: 15px 30px ;
+        align-items: center;
+        margin: auto;
+    }
+    #menu{
+        display: none;
+      }
+    .material-symbols-outlined {
+        display: block;
+        background-color: #000;
+        color: white;
+        display: block;
+        text-align: right;
+        padding: 5px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .material-symbols-outlined:hover {
+          background-color: #e0e0e0;
+          color: #000;
+      }
 
-    nav.active {
-        display: flex; /* Exibir o menu quando a classe 'active' é aplicada */
+        nav ul{
+            display: block;
+            padding: 0px;
+        }
+    
+        nav > ul{
+            list-style-type: none;
+
+
+        }
+    
+        nav > ul > li > a{
+        display: block;
+        text-decoration: none;
+        background-color: #000;
+        color: white;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 10px;
+        text-align: center;
+        margin: 0px;
+        }
+        nav > ul > li > a:hover{
+            background-color: #e0e0e0;
+            color: #000;
+        }
+        
     }
-}
+      
