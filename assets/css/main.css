@@ -27,3 +27,6 @@ main{
         width: 200px;
         margin: auto;
 }
+.home__services{
+    flex-direction: row;
+}
