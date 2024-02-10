@@ -1,0 +1,25 @@
+/* Media Query para Telas Pequenas (Mobile) */
+@media screen and (max-width: 768px) {
+    .material-symbols-outlined {
+        display: none; /* Ocultar o ícone do menu em telas pequenas */
+    }
+
+    .toggle-menu {
+        display: block; /* Exibir o ícone de hamburguer em telas pequenas */
+    }
+
+    nav {
+        display: none; /* Ocultar o menu por padrão em telas pequenas */
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #f1f1f1; /* Adicione uma cor de fundo para visualização */
+        width: 100%;
+    }
+
+    nav.active {
+        display: flex; /* Exibir o menu quando a classe 'active' é aplicada */
+    }
+}
