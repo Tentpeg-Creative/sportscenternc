@@ -57,10 +57,6 @@
     background-color: #f1f1f1; /* Adicione uma cor de fundo para visualização */
 }
 
-.logo img {
-    height: 40px; /* Ajuste a altura conforme necessário */
-}
-
 .material-symbols-outlined {
     display: none; /* Oculte o ícone do menu por padrão em telas grandes */
     font-size: 24px; /* Ajuste o tamanho conforme necessário */
