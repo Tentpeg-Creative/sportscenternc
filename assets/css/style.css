@@ -71,7 +71,7 @@ nav ul li a{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-nav ul li a:hover{
+nav ul li a :hover{
     cursor: pointer;
     text-decoration: underline;
 }
@@ -86,83 +86,67 @@ nav li ul li a{
 
 
 
-/* SLIDE */
+/* SLIDE*/
 
-.slide {
+.slide{
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    width: auto;
+    height: 500px;
+    display: flex;
 }
-
-.slide .image__container {
-    position: relative;
+.slide .image__container{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.slide .image__container img{
     width: 100%;
-    height: 100%;
-}
+    margin: 0 auto;
+    display: block;
+    height: 500px;
 
-.slide .image__container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
-
-.slide .text__container {
+.slide h1{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     color: #fff;
-}
-
-.slide h1 {
+    text-align: center;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
-    font-size: 4em; /* Reduzi o tamanho para dispositivos móveis */
+    font-size: 50px;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
-
-.slide h5 {
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5em; /* Reduzi o tamanho para dispositivos móveis */
-    margin-bottom: 20px;
-}
-
-.slide .cta-button {
-    display: inline-block;
+.slide h5{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
+    text-align: center;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
+    font-size: 20px;
+    text-transform: none;
+}
+.slide button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
     text-transform: uppercase;
-    padding: 15px 30px; /* Ajuste de padding para dispositivos móveis */
+    padding: 18px;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+.slide button:hover{
     background-color: #000;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.slide .cta-button:hover {
-    background-color: #333;
-}
-
-/* Media Query para Telas Pequenas (Mobile) */
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-    .slide h1 {
-        font-size: 2.5em;
-    }
-
-    .slide h5 {
-        font-size: 1.2em;
-    }
-
-    .slide .cta-button {
-        padding: 10px 20px;
-    }
+    color:#fff;
 }
 
