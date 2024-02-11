@@ -6,16 +6,16 @@
     <title>SportsCenternc - Fitness & Athletic Club</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/menu__mobile.css">
+    <link rel="stylesheet" href="./assets/css/menu_desktop_mobile.css">
+    <!--<link rel="stylesheet" href="./assets/css/menu__mobile.css">-->
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script src="./assets/js/script.js"></script>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
 
 
 </head>
 <body>
-    <div class="top-bar">
+   <!-- <div class="top-bar">
         <div class="address-top">
             <span>233 Country Club DR NE | Concord, Nc 28025</span>
         </div>
@@ -23,26 +23,34 @@
         <div class="phone-top">
             <span>+1 (704) 782-3000</span>
         </div>
-    </div>
+    </div>-->
 
-    <header class="header">
-        <div class="logo">
-            <img src="./assets/images/logo.png" alt="Logo Sportscenternc">
-        </div>
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>  
-        <nav id="menu">
-            <ul>
-                <li><a href="#">Classes</a></li>
-                <li><a href="#">Class Schedule</a></li>
-                <li><a href="#">Training</a></li>
-                <li><a href="#">Pools</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Amenities</a></li>
-                <li><a href="#">Members</a></li>
+<header id="header">
+    <div class="logo"><img src="assets/images/logo.png" alt="Logo"></div>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li>
+            <a href="/">Classes</a>
+            <ul class="submenu">
+              <li><a href="/">Bodypump</a></li>
+              <li><a href="/">Yoga</a></li>
             </ul>
-        </nav>
-    </header>
+          </li>
+        <li><a href="#">Class Schedule</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Pools</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Amenities</a></li>
+        <li><a href="#">Members</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
     <div class="slide">
         <div class="image__container">
             <img src="assets/images/banner_quadra.jpg" alt="Main Banner">
@@ -88,5 +96,6 @@
         </div>
     </div>
   
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
