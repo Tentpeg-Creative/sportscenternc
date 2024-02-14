@@ -44,84 +44,6 @@
 .material-symbols-outlined{
     display: none;
 }
-
-/* SLIDE 
-
-.slide {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.slide .image__container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.slide .image__container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slide .text__container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-}
-
-.slide h1 {
-    font-weight: 600;
-    font-family: 'Lato', sans-serif;
-    font-size: 4em; 
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.slide h5 {
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5em; 
-    margin-bottom: 20px;
-}
-
-.slide .cta-button {
-    display: inline-block;
-    color: #fff;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    padding: 15px 30px; 
-    border-radius: 5px;
-    background-color: #000;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.slide .cta-button:hover {
-    background-color: #333;
-}
-
-
-@media screen and (max-width: 768px) {
-    .slide h1 {
-        font-size: 2.5em;
-    }
-
-    .slide h5 {
-        font-size: 1.2em;
-    }
-
-    .slide .cta-button {
-        padding: 10px 20px;
-    }
-}*/
-
 /*Slider Classes*/
 
 .slider{
@@ -259,20 +181,6 @@
     background-color: #333;
 }
 
-
-@media screen and (max-width: 768px) {
-    .slide h1 {
-        font-size: 2.5em;
-    }
-
-    .slide h5 {
-        font-size: 1.2em;
-    }
-
-    .slide .cta-button {
-        padding: 10px 20px;
-    }
-}
 .home__title{
     display: flex;
     flex-direction: column;
@@ -316,14 +224,21 @@
     background-color: #333;
 }
 
+.gallery__home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
 
 @media screen and (max-width: 768px) {
     .slide h1 {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 
     .slide h5 {
-        font-size: 1.2em;
+        font-size: 0.5em;
     }
 
     .slide .cta-button {
@@ -332,11 +247,39 @@
     .gallery__home{
         flex-direction: column;
     }
+    .home__title h2{
+        text-align: center;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        padding-bottom: 20px;;
+        margin-top: 30px;
+    }
+    .gallery__home {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px;
+    }
+
+
 }
-.gallery__home{
+
+.welcome__concord{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 15px;
+    justify-content: center;
+}
+.text__welcome{
+    width: 80%;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 20px 15px 20px;
+    line-height: 25px;
 }
