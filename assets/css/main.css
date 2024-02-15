@@ -23,10 +23,9 @@ main{
     display: block;
 }
 .title__classes___home hr{
-        border-top: 5px dotted red;
-        margin: 20px 20px; /* Ajuste a margem conforme necessário */
-        width: 200px;
-        margin: auto;
+    width: 200px; /* ajuste conforme necessário */
+    height: 1px;
+    border-bottom: 5px dotted red;
 }
 .home__services{
     display: flex;
